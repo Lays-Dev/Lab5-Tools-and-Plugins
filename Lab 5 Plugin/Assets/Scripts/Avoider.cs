@@ -30,7 +30,7 @@ public class Avoider : MonoBehaviour
 
         if(agent == null)
         {
-            Debug.LogWarning("Avoider needs a NavMesh Agent in the inspector.");
+            Debug.LogWarning("Avoider needs a NavMesh Agent in the inspector with a baked NavMesh.");
         }
 
         if(avoidee == null)
@@ -63,6 +63,14 @@ public class Avoider : MonoBehaviour
            
             // Rotate this game object
             transform.rotation = Quaternion.LookRotation(direction);
+        }
+
+        // Calculate how far the player is from the avoider
+        float distance = Vector3.Distance(transform.position, avoidee.transform.position);
+
+        if (distance <= range)
+        {
+            Debug.Log("Avoidee is in range!");
         }
     }
 #endregion
