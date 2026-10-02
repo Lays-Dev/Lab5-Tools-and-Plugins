@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 using UnityEngine;
 
 public class PoissonDiscSampler
@@ -106,3 +106,4 @@ public class PoissonDiscSampler
         }
     }
 }
+*/
