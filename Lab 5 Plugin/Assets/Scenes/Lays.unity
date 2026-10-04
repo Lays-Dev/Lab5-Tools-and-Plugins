@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 433717346}
   - component: {fileID: 433717345}
   - component: {fileID: 433717344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Avoider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,10 +281,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Avoider
   avoidee: {fileID: 1006775163}
   speed: 5
-  showGizmos: 1
+  showLines: 1
   sampleAreaSize: 16
   sampleSpacing: 2
-  eyeHeight: 1
+  avoiderLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!195 &433717345
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -509,7 +511,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.49999994, y: 1.5, z: -0.16666667}
-  m_LocalScale: {x: 1, y: 3, z: 0.33333334}
+  m_LocalScale: {x: 1, y: 3, z: 0.8283}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 687221141}
@@ -644,7 +646,7 @@ GameObject:
   - component: {fileID: 1006775164}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -738,7 +740,7 @@ Transform:
   m_GameObject: {fileID: 1006775163}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35356, y: 0.8, z: -5.88}
+  m_LocalPosition: {x: -0.47, y: 0.8, z: -5.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1007,7 +1009,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.5, y: 1.5, z: -0.8333336}
-  m_LocalScale: {x: 1, y: 3, z: 0.33333334}
+  m_LocalScale: {x: 1, y: 3, z: 0.9297334}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 687221141}
